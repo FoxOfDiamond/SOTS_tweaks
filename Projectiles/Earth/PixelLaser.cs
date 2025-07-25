@@ -72,7 +72,7 @@ namespace SOTS.Projectiles.Earth
 			color.A = 0;
 			Vector2 startingPosition = Projectile.Center;
 			Projectile.velocity = Projectile.velocity.SafeNormalize(Vector2.Zero);
-			for(int b = 0; b < 640; b ++)
+			for(int b = 0; b < 100000; b ++)
 			{
 				startingPosition += Projectile.velocity * 2.5f;
 				finalPosition = startingPosition;
@@ -81,7 +81,9 @@ namespace SOTS.Projectiles.Earth
 				if (WorldgenHelpers.SOTSWorldgenHelper.TrueTileSolid(i, j))
                 {
 					break;
-                }
+                }else if(Main.tileCut[Main.tile[i, j].TileType]){
+					WorldGen.KillTile(i,j);
+				}
 				Rectangle projHit = new Rectangle((int)startingPosition.X - 4, (int)startingPosition.Y - 4, 8, 8);
 				bool hasCollided = false;
 				for(int ID = 0; ID < Main.npc.Length; ID++)

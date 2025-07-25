@@ -1,6 +1,6 @@
 author = Vortex Of Rainbows
 version = 0.25.0.3
-displayName = [c/c694e8:Secrets Of The Shadows]
+displayName = [c/c694e8:Secrets Of The Shadows: Laser pointer of doom edition]
 hideCode = true
 hideResources = false
 includeSource = true

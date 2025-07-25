@@ -1,13 +1,8 @@
 
 <Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="..\tModLoader.targets" />
-	<PropertyGroup>
-		<AssemblyName>SOTS</AssemblyName>
-		<LangVersion>latest</LangVersion>
-	</PropertyGroup>
-	<ItemGroup>
-		<Reference Include="SubworldLibrary">
-			<HintPath>..\SubworldLibrary\SubworldLibrary.dll</HintPath>
-		</Reference>
-	</ItemGroup>
+  <Import Project="..\tModLoader.targets" />
+  <PropertyGroup>
+    <AssemblyName>SOTS</AssemblyName>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
 </Project>
